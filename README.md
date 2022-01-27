@@ -5,11 +5,31 @@
 
 ## Описание Функций
 
-- fix_marks - получает на вход объект ученика и исправляет все его плохие оценки на 5ки. Требует импорта классов Mark и Schoolkid
+- fix_marks - получает на вход имя ученика и исправляет все его плохие оценки на 5ки. Требует импорта классов:
+  ```
+  from datacenter.models import Mark
+  from datacenter.models import Schoolkid
+  ```
+&nbsp;
 
-- delete_chastisement - получает на вход объект ученика и удаляет все его замечания. Требует импорта классов Chastisement и Schoolkid
+- delete_chastisement - получает на вход имя ученика и удаляет все его замечания. Требует импорта классов:
 
-- create_commendation - получает на вход имя ученика с предметом и добавляет к последнему уроку по этому предмету похвалу с одним из возможных текстов. Требует импорта классов Commendation, Schoolkid, Lesson, Subject а также функции choice модуля random
+  ```
+  from datacenter.models import Chastisement
+  from datacenter.models import Schoolkid
+  ```
+
+&nbsp;
+
+  - create_commendation - получает на вход имя ученика с предметом и добавляет к последнему уроку по этому предмету похвалу с одним из возможных текстов. Требует импорта классов и функции:
+
+  ```
+  from datacenter.models import Commendation
+  from datacenter.models import Schoolkid
+  from datacenter.models import Lesson
+  from datacenter.models import Subject
+  from random import choice
+  ```
 
 
 ## Цели проекта
